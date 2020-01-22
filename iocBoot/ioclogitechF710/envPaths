@@ -1,0 +1,7 @@
+epicsEnvSet("IOC","ioclogitechF710")
+epicsEnvSet("TOP","/epics/iocs/logitechF710")
+epicsEnvSet("SUPPORT","/opt/epics/support")
+epicsEnvSet("ASYN","/opt/epics/support/asyn")
+epicsEnvSet("AUTOSAVE","/opt/epics/support/autosave")
+epicsEnvSet("USB","/opt/epics/support/epics-usb")
+epicsEnvSet("EPICS_BASE","/opt/epics/base")

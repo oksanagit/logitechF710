@@ -1,0 +1,26 @@
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=UpSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=DownSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LeftSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RightSeq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LSUpSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LSDownSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LSLeftSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LSRightSeq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RSUpSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RSDownSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RSLeftSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RSRightSeq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=ASeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=BSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=XSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=YSeq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LTSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=LBSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RTSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=RBSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=L3Seq
+file UserSeq.req P=XF:08ID1-ES{GP},R=$(R),SEQ=R3Seq

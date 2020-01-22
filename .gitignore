@@ -1,0 +1,7 @@
+bin/
+O.*/
+lib/
+db/
+dbd/
+*.swp
+auto_settings.sav*

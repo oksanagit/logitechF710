@@ -24,3 +24,5 @@ file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RTSeq
 file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RBSeq
 file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=L3Seq
 file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=R3Seq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSRightSeqHome

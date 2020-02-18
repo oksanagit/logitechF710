@@ -13,6 +13,7 @@ record(fanout, "$(P)$(R)LStickHorizontalFanout")
 {
 	field(LNK1, "$(P)$(R)LStickRight")
 	field(LNK2, "$(P)$(R)LStickLeft")
+	field(LNK3, "$(P)$(R)LStickRightHome")
 }
 
 record(calcout, "$(P)$(R)LStickRight")
@@ -25,6 +26,18 @@ record(calcout, "$(P)$(R)LStickRight")
 	
 	field(OUT, "$(P)$(R)LSRightSeq.PROC")
 }
+
+record(calcout, "$(P)$(R)LStickRightHome")
+{
+        field(OOPT, "Transition To Zero")
+
+        field(INPA, "$(P)$(R)LStickHorizontal")
+
+        field(CALC, "((A - 127) > 50) ? 1 : 0")
+
+        field(OUT, "$(P)$(R)LSRightSeqHome.PROC")
+}
+
 
 record(calcout, "$(P)$(R)LStickLeft")
 {
@@ -513,6 +526,7 @@ record(seq, "$(P)$(R)LSUpSeq") {}
 record(seq, "$(P)$(R)LSDownSeq") {}
 record(seq, "$(P)$(R)LSLeftSeq") {}
 record(seq, "$(P)$(R)LSRightSeq") {}
+record(seq, "$(P)$(R)LSRightSeqHome") {}
 record(seq, "$(P)$(R)RSUpSeq") {}
 record(seq, "$(P)$(R)RSDownSeq") {}
 record(seq, "$(P)$(R)RSLeftSeq") {}

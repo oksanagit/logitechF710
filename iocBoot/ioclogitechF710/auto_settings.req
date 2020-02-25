@@ -25,4 +25,12 @@ file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RBSeq
 file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=L3Seq
 file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=R3Seq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSRightSeqHome
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSRightHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSLeftHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSUpHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSDownHomeSeq
+
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSRightHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSLeftHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSUpHomeSeq
+file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSDownHomeSeq

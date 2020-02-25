@@ -14,6 +14,7 @@ record(fanout, "$(P)$(R)LStickHorizontalFanout")
 	field(LNK1, "$(P)$(R)LStickRight")
 	field(LNK2, "$(P)$(R)LStickLeft")
 	field(LNK3, "$(P)$(R)LStickRightHome")
+	field(LNK4, "$(P)$(R)LStickLeftHome")
 }
 
 record(calcout, "$(P)$(R)LStickRight")
@@ -35,7 +36,7 @@ record(calcout, "$(P)$(R)LStickRightHome")
 
         field(CALC, "((A - 127) > 50) ? 1 : 0")
 
-        field(OUT, "$(P)$(R)LSRightSeqHome.PROC")
+        field(OUT, "$(P)$(R)LSRightHomeSeq.PROC")
 }
 
 
@@ -50,6 +51,16 @@ record(calcout, "$(P)$(R)LStickLeft")
 	field(OUT, "$(P)$(R)LSLeftSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)LStickLeftHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)LStickHorizontal")
+
+	field(CALC, "((A - 127) < -50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)LSLeftHomeSeq.PROC")
+}
 
 record(ai, "$(P)$(R)LStickVertical")
 {
@@ -64,6 +75,8 @@ record(fanout, "$(P)$(R)LStickVerticalFanout")
 {
 	field(LNK1, "$(P)$(R)LStickUp")
 	field(LNK2, "$(P)$(R)LStickDown")
+	field(LNK3, "$(P)$(R)LStickUpHome")
+	field(LNK4, "$(P)$(R)LStickDownHome")
 }
 
 record(calcout, "$(P)$(R)LStickUp")
@@ -77,6 +90,17 @@ record(calcout, "$(P)$(R)LStickUp")
 	field(OUT, "$(P)$(R)LSUpSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)LStickUpHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)LStickVertical")
+
+	field(CALC, "((A - 127) < -50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)LSUpHomeSeq.PROC")
+}
+
 record(calcout, "$(P)$(R)LStickDown")
 {
 	field(OOPT, "Transition To Non-zero")
@@ -88,6 +112,16 @@ record(calcout, "$(P)$(R)LStickDown")
 	field(OUT, "$(P)$(R)LSDownSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)LStickDownHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)LStickVertical")
+
+	field(CALC, "((A - 127) > 50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)LSDownHomeSeq.PROC")
+}
 
 record(ai, "$(P)$(R)RStickHorizontal")
 {
@@ -104,6 +138,8 @@ record(fanout, "$(P)$(R)RStickHorizontalFanout")
 {
 	field(LNK1, "$(P)$(R)RStickRight")
 	field(LNK2, "$(P)$(R)RStickLeft")
+	field(LNK3, "$(P)$(R)RStickRightHome")
+	field(LNK4, "$(P)$(R)RStickLeftHome")
 }
 
 record(calcout, "$(P)$(R)RStickRight")
@@ -117,6 +153,17 @@ record(calcout, "$(P)$(R)RStickRight")
 	field(OUT, "$(P)$(R)RSRightSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)RStickRightHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)RStickHorizontal")
+
+	field(CALC, "((A - 127) > 50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)RSRightHomeSeq.PROC")
+}
+
 record(calcout, "$(P)$(R)RStickLeft")
 {
 	field(OOPT, "Transition To Non-zero")
@@ -128,6 +175,16 @@ record(calcout, "$(P)$(R)RStickLeft")
 	field(OUT, "$(P)$(R)RSLeftSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)RStickLeftHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)RStickHorizontal")
+
+	field(CALC, "((A - 127) < -50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)RSLeftHomeSeq.PROC")
+}
 
 record(ai, "$(P)$(R)RStickVertical")
 {
@@ -144,6 +201,8 @@ record(fanout, "$(P)$(R)RStickVerticalFanout")
 {
 	field(LNK1, "$(P)$(R)RStickUp")
 	field(LNK2, "$(P)$(R)RStickDown")
+	field(LNK3, "$(P)$(R)RStickUpHome")
+	field(LNK4, "$(P)$(R)RStickDownHome")
 }
 
 record(calcout, "$(P)$(R)RStickUp")
@@ -157,6 +216,17 @@ record(calcout, "$(P)$(R)RStickUp")
 	field(OUT, "$(P)$(R)RSUpSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)RStickUpHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)RStickVertical")
+
+	field(CALC, "((A - 127) < -50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)RSUpHomeSeq.PROC")
+}
+
 record(calcout, "$(P)$(R)RStickDown")
 {
 	field(OOPT, "Transition To Non-zero")
@@ -168,6 +238,16 @@ record(calcout, "$(P)$(R)RStickDown")
 	field(OUT, "$(P)$(R)RSDownSeq.PROC")
 }
 
+record(calcout, "$(P)$(R)RStickDownHome")
+{
+	field(OOPT, "Transition To Zero")
+
+	field(INPA, "$(P)$(R)RStickVertical")
+
+	field(CALC, "((A - 127) > 50) ? 1 : 0")
+	
+	field(OUT, "$(P)$(R)RSDownHomeSeq.PROC")
+}
 
 record(bi, "$(P)$(R)RightBumperPressed")
 {
@@ -523,13 +603,20 @@ record(seq, "$(P)$(R)RBSeq") {}
 record(seq, "$(P)$(R)RTSeq") {}
 record(seq, "$(P)$(R)R3Seq") {}
 record(seq, "$(P)$(R)LSUpSeq") {}
+record(seq, "$(P)$(R)LSUpHomeSeq") {}
 record(seq, "$(P)$(R)LSDownSeq") {}
+record(seq, "$(P)$(R)LSDownHomeSeq") {}
 record(seq, "$(P)$(R)LSLeftSeq") {}
+record(seq, "$(P)$(R)LSLeftHomeSeq"){}
 record(seq, "$(P)$(R)LSRightSeq") {}
-record(seq, "$(P)$(R)LSRightSeqHome") {}
+record(seq, "$(P)$(R)LSRightHomeSeq") {}
 record(seq, "$(P)$(R)RSUpSeq") {}
+record(seq, "$(P)$(R)RSUpHomeSeq") {}
 record(seq, "$(P)$(R)RSDownSeq") {}
+record(seq, "$(P)$(R)RSDownHomeSeq") {}
 record(seq, "$(P)$(R)RSLeftSeq") {}
+record(seq, "$(P)$(R)RSLeftHomeSeq") {}
 record(seq, "$(P)$(R)RSRightSeq") {}
+record(seq, "$(P)$(R)RSRightHomeSeq") {}
 record(seq, "$(P)$(R)StartSeq") {}
 record(seq, "$(P)$(R)BackSeq") {}

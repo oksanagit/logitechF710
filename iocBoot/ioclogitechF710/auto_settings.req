@@ -1,36 +1,36 @@
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=UpSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=DownSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LeftSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RightSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=UpSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=DownSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LeftSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RightSeq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSUpSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSDownSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSLeftSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSRightSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSUpSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSDownSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSLeftSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSRightSeq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSUpSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSDownSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSLeftSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSRightSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSUpSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSDownSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSLeftSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSRightSeq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=ASeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=BSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=XSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=YSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=ASeq
+file UserSeq.req P=$(P),R=$(R),SEQ=BSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=XSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=YSeq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LTSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LBSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RTSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RBSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=L3Seq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=R3Seq
+file UserSeq.req P=$(P),R=$(R),SEQ=LTSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LBSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RTSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RBSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=L3Seq
+file UserSeq.req P=$(P),R=$(R),SEQ=R3Seq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSRightHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSLeftHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSUpHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=LSDownHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSRightHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSLeftHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSUpHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=LSDownHomeSeq
 
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSRightHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSLeftHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSUpHomeSeq
-file UserSeq.req P=XF:08ID1-ES{GP},R=SMPL:,SEQ=RSDownHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSRightHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSLeftHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSUpHomeSeq
+file UserSeq.req P=$(P),R=$(R),SEQ=RSDownHomeSeq

@@ -21,10 +21,7 @@ usbCreateDriver("$(PORT)", "db/LogitechF710-DirectX.in")
 usbSetTimeout("$(PORT)", 1000)
 #usbShowIO("$(PORT)", ON/OFF)
 usbShowIO("$(PORT)", 1)
-usbSetInterruptable("$(PORT)", 1)
 
-
-##usbConnectDevice("TEST", 0, 0x046d, 0xc219)
 usbConnectDevice("$(PORT)", 0, 0x046d, 0xc219)
 
 dbLoadRecords("db/LogitechF710.db", "P=$(PREFIX),R=$(INSTANCE):,PORT=$(PORT)")
@@ -48,7 +45,7 @@ iocInit
 
 # Save every 30 seconds
 ##create_monitor_set("LogitechF710_settings.req", 30)
-create_monitor_set("auto_settings.req", 30)
+create_monitor_set("auto_settings.req", 30, "P=$(PREFIX), R=$(INSTANCE):")
 
 ## Start any sequence programs
 #seq sncExample, "user=oksana"
